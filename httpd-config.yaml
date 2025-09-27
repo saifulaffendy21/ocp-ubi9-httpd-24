@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: httpd-site
+  namespace: web
+data:
+  index.html: |
+    <!doctype html>
+    <html><head><title>Apache on OpenShift</title></head>
+    <body><h1>It works — UBI9 httpd on OpenShift</h1></body></html>
